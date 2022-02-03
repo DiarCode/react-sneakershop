@@ -1,0 +1,39 @@
+.burgerMenu{
+    display: none;
+}
+.burgerMenuActive{
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.596);
+    z-index: 100;
+}
+
+.burgerMenu-content{
+    position: absolute;
+    width: 18rem;
+    top: 0;
+    bottom: 0;
+    background-color: #fff;
+    padding:3rem 1.5rem;
+}
+
+.burgerMenu-close{
+    background: none;
+    margin-bottom: 4rem;
+}
+
+.burgerMenu-close img{ 
+    width: 1.5rem;
+}
+
+.burgerMenu-list *{
+    letter-spacing:0.05rem;
+    color:hsl(220, 13%, 13%);
+    font-weight: 700;
+    font-size: 1.6rem;
+    margin-bottom: 2.3rem;
+}

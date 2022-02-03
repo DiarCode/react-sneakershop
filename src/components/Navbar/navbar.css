@@ -1,0 +1,66 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 2rem 0;
+    border-bottom: 1px solid hsl(220, 14%, 75%);
+}
+
+.burger{
+    display: none;
+    margin-right: 1.5rem;
+    background: none;
+}
+
+.burger img{
+    width: 1.4rem;
+}
+
+.navbar-logo{
+    cursor: pointer;
+    margin-right: 4rem;
+}
+
+.navbar-nav{
+    display: flex;
+    flex: 1;
+    color: hsl(219, 9%, 45%);
+    font-size: 1.3rem;
+}
+
+.navbar-nav *{
+    cursor: pointer;
+    margin-right: 2rem;
+}
+
+.navbar-cart{
+    cursor: pointer;
+    margin-right: 2.5rem;
+
+}
+
+.navbar-user {
+    cursor: pointer;
+}
+
+.navbar-user img{
+    width: 100%;
+    height: auto;
+    max-width: 3.4rem;
+}
+
+.navbar-user img:hover{
+    border-radius: 50%;
+    border: 2px solid hsl(26, 100%, 55%);
+}
+
+@media (max-width: 770px){
+    .navbar-logo{
+        flex: 1;
+    }
+    .navbar-nav{
+        display: none;
+    }
+    .burger{
+        display: block;
+    }
+}
