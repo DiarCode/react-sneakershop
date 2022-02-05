@@ -1,0 +1,11 @@
+.cartCounter{
+    position:absolute;
+    top: -0.5rem;
+    right: -0.5rem;
+    font-size: 0.6rem;
+    font-weight: 700;
+    background: hsl(26, 100%, 55%);
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.5rem;
+    color: #fff;
+}

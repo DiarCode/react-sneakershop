@@ -48,8 +48,8 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 .App{
 	padding: 0 1.5rem;
-	overflow:hidden;
 	max-width: 80rem;
+	height: 100vh;
 	margin: 0 auto;
 	font-family: var(--font-kumbh);
 }

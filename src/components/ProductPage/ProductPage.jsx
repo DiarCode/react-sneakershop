@@ -10,11 +10,18 @@ import CountPlusIcon from '../../assets/icon-plus.svg';
 import ModalImage from '../ModalImage/ModalImage';
 
 const ProductPage = () => {
-    const images = [Image1, Image2, Image3, Image4]
+    const images = [Image1, Image2, Image3, Image4]  
     const [currentImage, setCurrentImage] = useState(Image1);
     const [pressed, setPressed] = useState(Image1);
     const [visib, setVisib] = useState(false);
     const [currentCount, setCurrentCount] = useState(0);
+    const [productData, setProductData] = useState({
+        image: currentImage,
+        brand: "Sneaker",
+        name: "Fall Limited Edition Sneakers",
+        description: "These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.",
+        price: "125.00",
+    });
 
     function isPressed(image){
         if (currentImage === image) {
@@ -28,6 +35,17 @@ const ProductPage = () => {
     function subsCount() {
         if (currentCount > 0) setCurrentCount(currentCount-1);
         else alert("You have reached minimum count of this item!")
+    }
+    function setToCart() {
+        if (currentCount === 0) return alert("Error! Set more than 0 items!"); 
+        const cartItem = {
+            image: productData.image,
+            name: productData.name,
+            price: productData.price,
+            count: currentCount ,
+        }
+        const localStorageData = JSON.parse(localStorage.getItem("cartItems")) || [];
+        localStorage.setItem("cartItems", JSON.stringify([...localStorageData, cartItem]));
     }
 
   return (
@@ -64,7 +82,7 @@ const ProductPage = () => {
                     </button>
                 </div>
                 <div className="info-toCart">
-                    <button>Add to cart</button>
+                    <button onClick={setToCart}>Add to cart</button>
                 </div>
             </div>
           </div>

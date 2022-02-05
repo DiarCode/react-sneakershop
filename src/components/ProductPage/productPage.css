@@ -365,14 +365,14 @@
 }
 @media (max-width: 442px){
     .product{
-        max-width:70%;
+        max-width:100%;
         margin: 0 auto;
         flex-direction: column;
     }
     .product-gallery{
         max-width:100%;
         margin-right: 0;
-        margin-bottom: 1.5rem;
+        margin-bottom: 3rem;
     }
     .gallery-main{
         margin-bottom: 1rem;
@@ -391,13 +391,13 @@
         margin-bottom: 0.7rem;
     }
     .info-name{
-        font-size: 1.5rem;
+        font-size: 2.2rem;
         margin-bottom: 0.7rem;
     }
     .info-descrip{
         line-height: 1.6;
-        font-size: 0.8rem;
-        margin-bottom: 1rem;
+        font-size: 1rem;
+        margin-bottom: 2rem;
     }
     .info-price{
         display: flex;
@@ -409,13 +409,13 @@
         margin-bottom: 0;
     }
     .price-num{
-        font-size: 1.3rem;
+        font-size: 2rem;
     }
     .price-sale{
-        font-size: 0.6rem;
+        font-size: 1rem;
     }
     .price-lined{
-        font-size: 1rem;
+        font-size: 1.4rem;
     }
     .info-btns{
     }
@@ -427,6 +427,7 @@
         width:100%;
         margin: 0 auto;
         margin-bottom: 1rem;
+        padding: 0.6rem 1rem;
     }
 
 }
