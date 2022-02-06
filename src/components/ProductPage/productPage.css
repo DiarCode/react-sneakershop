@@ -314,6 +314,9 @@
 
 }
 @media (max-width: 490px){
+    .product{
+        padding-bottom: 5rem;
+    }
     .product-gallery{
         margin-right: 3rem;
     }
