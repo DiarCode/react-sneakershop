@@ -1,6 +1,6 @@
 {
-  "homepage": "https://diarcode.github.io/sneakershop",
-  "name": "sneakershop",
+  "homepage": "https://diarcode.github.io/react-sneakershop",
+  "name": "react-sneakershop",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
